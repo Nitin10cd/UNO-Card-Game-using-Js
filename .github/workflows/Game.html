@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uno Game</title>
+    <link rel="stylesheet" href="Game.css">
+</head>
+<body>
+    <section class="middle">
+        <div class="cards">
+            <img  id="newSrc" kolor="b" no="0"  src="blue0.jpg" alt="" class="src blue zero">
+            <img  id="newSrc" kolor="g" no="0" src="green0.jpg" alt="" class="src green zero">
+            <img  id="newSrc" kolor="y" no="0"  src="yellow0.jpg" alt="" class="src yellow zero">
+            <img  id="newSrc" kolor="r" no="0" src="red0.jpg" alt="" class=" src red zero">
+            <img  id="newSrc" kolor="r" no="1" src="red1.jpg" alt="" class="src red one">
+            <img  id="newSrc" kolor="b" no="1"  src="blue1.jpg" alt="" class="src blue one">
+            <img  id="newSrc" kolor="g" no="1"  src="green1.jpg" alt="" class="src green one">
+            <img  id="newSrc" kolor="y" no="1"  src="yellow1.jpg" alt="" class="src  yellow one">
+            <img  id="newSrc" kolor="g" no="2"  src="green2.jpg" alt="" class="src green two">
+            <img  id="newSrc" kolor="r" no="2"  src="red2.jpg" alt="" class="src red two">
+            <img  id="newSrc" kolor="y" no="2"  src="yellow2.jpg" alt="" class="src  yellow two">
+            <img  id="newSrc" kolor="b" no="2"  src="blue2.jpg" alt="" class="src blue two">
+            <img  id="newSrc" kolor="g" no="3"  src="green3.jpg" alt="" class="src green three">
+            <img  id="newSrc" kolor="r" no="3"  src="red3.jpg" alt="" class="src red three">
+            <img  id="newSrc" kolor="y" no="3"  src="yellow3.jpg" alt="" class="src  yellow three">
+            <img  id="newSrc" kolor="b" no="4"  src="blue3.jpg" alt="" class="src blue three">
+            <img  id="newSrc" kolor="r" no="4"  src="red4.jpg" alt="" class="src red four">
+            <img  id="newSrc" kolor="g" no="4"  src="green4.jpg" alt="" class="src green four">
+            <img  id="newSrc" kolor="b" no="4"  src="blue4.jpg" alt="" class="src blue four">
+            <img  id="newSrc" kolor="y" no="4"  src="yellow4.jpg" alt="" class="src  yellow four">
+            <img  id="newSrc" kolor="y" no="5"  src="yellow5.jpg" alt="" class="src  yellow five">
+            <img  id="newSrc" kolor="b" no="5"  src="blue5.jpg" alt="" class="src blue five">
+            <img  id="newSrc" kolor="r" no="5"  src="red5.jpg" alt="" class="src red five">
+            <img  id="newSrc" kolor="g" no="5"  src="green5.jpg" alt="" class="src green five">
+            <img  id="newSrc" kolor="b" no="6"  src="blue6.jpg" alt="" class="src blue six">
+            <img  id="newSrc" kolor="g" no="6"  src="green6.jpg" alt="" class="src green six">
+            <img  id="newSrc" kolor="r" no="6"  src="red6.jpg" alt="" class="src red six">
+            <img  id="newSrc" kolor="y" no="6"  src="yellow6 (2).jpg" alt="" class="src  yellow six">
+            <img  id="newSrc" kolor="r" no="7"  src="red7.jpg" alt="" class="src red seven">
+            <img  id="newSrc" kolor="y" no="7"  src="yellow7.jpg" alt="" class="src  yellow seven">
+            <img  id="newSrc" kolor="g" no="7"  src="green7.jpg" alt="" class="src green seven">
+            <img  id="newSrc" kolor="b" no="7"  src="blue7.jpg" alt="" class="src blue seven">
+            <img  id="newSrc" kolor="g" no="8"  src="green8.jpg" alt="" class="src green eight">
+            <img  id="newSrc" kolor="b" no="8"  src="blue8.jpg" alt="" class="src blue eight">
+            <img  id="newSrc" kolor="r" no="8"  src="red8.jpg" alt="" class="src red eight">
+            <img  id="newSrc" kolor="y" no="8"  src="yellow8.jpg" alt="" class="src  yellow eight">
+            <img  id="newSrc" kolor="y" no="9" src="yellow9.jpg" alt="" class="src  yellow nine">
+            <img  id="newSrc" kolor="g" no="9" src="green9.jpg" alt="" class="src green nine">
+            <img  id="newSrc" kolor="r" no="9" src="red9.jpg" alt="" class="src red nine">
+            <img  id="newSrc" kolor="b" no="9" src="blue9.jpg" alt="" class="src blue nine">
+            <img  id="newSrc" kolor="b" no="reverse" src="bluereverse.jpg" alt="" class="src blue">
+            <img  id="newSrc" kolor="g"  no="reverse" src="greenreverse.jpg" alt="" class="src green">
+            <img  id="newSrc" kolor="r" no="reverse" src="redreverse.jpg" alt="" class="src red">
+            <img  id="newSrc" kolor="y" no="reverse" src="yellowreverse.jpg" alt="" class="src  yellow">
+            <img  id="newSrc" kolor="r" no="draw2" src="red+2.jpg" alt="" class="src red">
+            <img  id="newSrc" kolor="b" no="draw2" src="blue+2.jpg" alt="" class="src blue">
+            <img  id="newSrc" kolor="g" no="draw2" src="green+2.jpg" alt="" class="src green">
+            <img  id="newSrc" kolor="y" no="draw2" src="yellow+2.jpg" alt="" class="src  yellow">
+            <img  id="newSrc" kolor="r" no="skip" src="redskip.jpg" alt="" class="src red">
+            <img  id="newSrc" kolor="b" no="skip" src="blueskip.jpg" alt="" class="src blue">
+            <img  id="newSrc" kolor="g" no="skip" src="greenskip.jpg" alt="" class="src green">
+            <img  id="newSrc" kolor="y" no="skip" src="yellowskip.jpg" alt="" class="src  yellow">
+            <img  id="newSrc" kolor="black" no="wild" src="wild.jpg" alt="" class="src">
+            <img  id="newSrc" kolor="black" no="wild" src="wild - Copy - Copy.jpg" alt="" class="src">
+            <img  id="newSrc" kolor="black" no="draw4" src="draw4.jpg" alt="" class="src">
+            <img  id="newSrc" kolor="black" no="draw4" src="draw4 - Copy.jpg" alt="" class="src ">
+            <img  id="newSrc" kolor="b" no="0" src="blue0 - Copy.jpg" alt="" class="src  blue zero">
+            <img  id="newSrc" kolor="g" no="0" src="green0 - Copy.jpg" alt="" class="src green zero">
+            <img  id="newSrc" kolor="y" no="0" src="yellow0 - Copy.jpg" alt="" class="src  yellow zero">
+            <img  id="newSrc" kolor="r" no="0" src="red0 - Copy.jpg" alt="" class="src red zero">
+            <img  id="newSrc" kolor="r" no="1" src="red1 - Copy.jpg" alt="" class="src red one">
+            <img  id="newSrc" kolor="b" no="1" src="blue1 - Copy.jpg" alt="" class="src blue one">
+            <img  id="newSrc" kolor="g" no="1" src="green1 - Copy.jpg" alt="" class="src green one ">
+            <img  id="newSrc" kolor="y" no="1" src="yellow1 - Copy.jpg" alt="" class="src  yellow one">
+            <img  id="newSrc" kolor="g" no="2" src="green2 - Copy.jpg" alt="" class="src green two">
+            <img  id="newSrc" kolor="r" no="2" src="red2 - Copy.jpg" alt="" class="src red two">
+            <img  id="newSrc" kolor="y" no="2" src="yellow2 - Copy.jpg" alt="" class="src  yellow two">
+            <img  id="newSrc" kolor="b" no="2" src="blue2 - Copy.jpg" alt="" class="src blue two">
+            <img  id="newSrc" kolor="g" no="3" src="green3 - Copy.jpg" alt="" class="src green three">
+            <img  id="newSrc" kolor="r" no="3" src="red3 - Copy.jpg" alt="" class="src red three">
+            <img  id="newSrc" kolor="y" no="3" src="yellow3 - Copy.jpg" alt="" class="src  yellow three">
+            <img  id="newSrc" kolor="b" no="3" src="blue3 - Copy.jpg" alt="" class="src blue three">
+            <img  id="newSrc" kolor="r" no="4" src="red4 - Copy.jpg" alt="" class="src red four">
+            <img  id="newSrc" kolor="g" no="4" src="green4 - Copy.jpg" alt="" class="src green four">
+            <img  id="newSrc" kolor="b" no="4" src="blue4 - Copy.jpg" alt="" class="src blue four">
+            <img  id="newSrc" kolor="y" no="4" src="yellow4 - Copy.jpg" alt="" class="src  yellow four">
+            <img  id="newSrc" kolor="y" no="5" src="yellow5 - Copy.jpg" alt="" class="src  yellow five">
+            <img  id="newSrc" kolor="b" no="5" src="blue5 - Copy.jpg" alt="" class="src blue five">
+            <img  id="newSrc" kolor="r" no="5" src="red5 - Copy.jpg" alt="" class="src red five">
+            <img  id="newSrc" kolor="g" no="5" src="green5 - Copy.jpg" alt="" class="src green five">
+            <img  id="newSrc" kolor="b" no="6" src="blue6 - Copy.jpg" alt="" class="src blue six">
+            <img  id="newSrc" kolor="g" no="6" src="green6 - Copy.jpg" alt="" class="src green six">
+            <img  id="newSrc" kolor="r" no="6" src="red6 - Copy.jpg" alt="" class="src red six">
+            <img  id="newSrc" kolor="y" no="6" src="yellow6 (2) - Copy.jpg" alt="" class="src  yellow six">
+            <img  id="newSrc" kolor="r" no="7" src="red7 - Copy.jpg" alt="" class="src red seven">
+            <img  id="newSrc" kolor="y" no="7" src="yellow7 - Copy.jpg" alt="" class="src  yellow seven">
+            <img  id="newSrc" kolor="g" no="7" src="green7 - Copy.jpg" alt="" class="src green seven">
+            <img  id="newSrc" kolor="b" no="7" src="blue7 - Copy.jpg" alt="" class="src blue seven">
+            <img  id="newSrc" kolor="g" no="8" src="green8 - Copy.jpg" alt="" class="src green eight">
+            <img  id="newSrc" kolor="b" no="8" src="blue8 - Copy.jpg" alt="" class="src blue eight ">
+            <img  id="newSrc" kolor="r" no="8" src="red8 - Copy.jpg" alt="" class="src red  eight">
+            <img  id="newSrc" kolor="y" no="8" src="yellow8 - Copy.jpg" alt="" class="src  yellow eight">
+            <img  id="newSrc" kolor="y" no="9" src="yellow9 - Copy.jpg" alt="" class="src  yellow nine">
+            <img  id="newSrc" kolor="g" no="9" src="green9 - Copy.jpg" alt="" class="src green nine">
+            <img  id="newSrc" kolor="r" no="9" src="red9 - Copy.jpg" alt="" class="src red nine">
+            <img  id="newSrc" kolor="b" no="9" src="blue9 - Copy.jpg" alt="" class="src blue nine">
+            <img  id="newSrc" kolor="b" no="reverse" src="bluereverse - Copy.jpg" alt="" class="src blue">
+            <img  id="newSrc" kolor="g" no="reverse" src="greenreverse - Copy.jpg" alt="" class="src green">
+            <img  id="newSrc" kolor="r" no="reverse" src="redreverse - Copy.jpg" alt="" class="src red">
+            <img  id="newSrc" kolor="y" no="reverse" src="yellowreverse - Copy.jpg" alt="" class="src  yellow">
+            <img  id="newSrc" kolor="r" no="draw2" src="red+2 - Copy.jpg" alt="" class="src red">
+            <img  id="newSrc" kolor="b" no="draw2" src="blue+2 - Copy.jpg" alt="" class="src blue">
+            <img  id="newSrc" kolor="g" no="draw2" src="green+2 - Copy.jpg" alt="" class="src green">
+            <img  id="newSrc" kolor="y" no="draw2" src="yellow+2 - Copy.jpg" alt="" class="src  yellow">
+            <img  id="newSrc" kolor="r" no="skip" src="redskip - Copy.jpg" alt="" class="src red">
+            <img  id="newSrc" kolor="b" no="skip" src="blueskip - Copy.jpg" alt="" class="src blue">
+            <img  id="newSrc" kolor="g" no="skip" src="greenskip - Copy.jpg" alt="" class="src green">
+            <img  id="newSrc" kolor="y" no="skip" src="yellowskip - Copy.jpg" alt="" class="src  yellow">
+            <img  id="newSrc" kolor="black" no="wild" src="wild - Copy.jpg" alt="" class="src">
+            <img  id="newSrc" kolor="black" no="wild" src="wild - Copy - Copy - Copy.jpg" alt="" class="src">
+            <img  id="newSrc" kolor="black" no="draw4" src="draw4 - Copy - Copy - Copy.jpg" alt="" class="src">
+            <img  id="newSrc" kolor="black" no="draw4" src="draw4 - Copy - Copy - Copy - Copy.jpg" alt="" class="src">
+        </div>
+    </section>
+    <section class="back">
+        <div class="backmid">
+            <img src="unoback.jpg" alt="">
+        </div>
+    </section>
+
+
+    <button onclick="Take();" class="take-Btn">Take</button>
+
+
+    <div class="playerSection1">
+        <div class="sec">
+            <img class="secc" src="twoi.png" alt="">
+            <h2 class="sech">Player1</h2>
+        </div>
+    </div>
+     <div class="playerSection2">
+        <div class="sec2">
+            <img class="secc2" src="three.jpg" alt="">
+            <h2 class="sech2">Player2</h2>
+        </div>
+    </div>
+    <div class="player1">
+        <div class="playerBox1">
+
+
+        </div>
+    </div>
+
+
+    <div class="player2">
+        <div class="playerBox2">
+
+
+        </div>
+    </div>
+
+
+    <div class="midCard">
+        <div class="midCardBox">
+           
+        </div>
+    </div>
+
+
+    <button id="oneB">
+     ChanceD
+    </button>
+    <button id="twoB">
+        ChanceD
+    </button>
+    <div class="Shild1">
+
+
+    </div>
+    <div class="Shild2">
+
+
+    </div>
+    <button class="btn" onclick="card_Distribute1()">Start</button>
+    <div class="colorBtn">
+        <button onclick="ChooseRed();" class="redbtn">Red</button>
+        <button onclick="ChooseBlue();" class="bluebtn">Blue</button>
+        <button onclick="ChooseGreen();" class="greenbtn">Green</button>
+        <button onclick="ChooseYellow();" class="yellowbtn">Yellow</button>
+    </div>
+
+
+    <h4>Made By: Nitin Saxena</h4>
+    <script src="Game.js"></script>
+</body>
+</html>
